@@ -12,9 +12,10 @@ inputs:
     mlflow_server: ""
     mlflow_username: ""
     num_procs_per_job: "1"
+    input: [1,2]
 workflow:
   type: yadage
-  file: workflow.yml
+  file: workflow-multi.yml
 outputs:
   files:
     - plots/all_methods.png
